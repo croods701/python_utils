@@ -3,5 +3,12 @@ def fib(num: int) -> int:
 
 import sys
 if len(sys.argv) > 1:
-    result: int = fib(int(sys.argv[1]))
-    print(result)
+    # number argument
+    inp: str = sys.argv[1]
+    try:
+        inp = int(inp)
+    except ValueError:
+        print("Please pass valid number")
+    else:
+        result: int = fib(inp)
+        print(result)

@@ -11,9 +11,8 @@ def armstrong(num: int) -> bool:
 
 import sys
 if len(sys.argv) > 1:
-    try:
-        inp = int(sys.argv[1])
-    except ValueError:
-        print("please enetr valid number")
+    inp = sys.argv[1]
+    if inp.isdigit():
+        print(armstrong(int(inp)))    
     else:
-        print(armstrong(inp))    
+        print("please enetr valid number")

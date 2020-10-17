@@ -1,5 +1,6 @@
 def fib(num: int) -> int:
-    return num * fib(num-1) if num > 0 else 1
+    # return num * fib(num-1) if num > 0 else 1
+    return 1 if num <= 1 else num * fib(num-1)
 
 import sys
 if len(sys.argv) > 1:

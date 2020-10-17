@@ -9,7 +9,7 @@ if len(sys.argv) > 1:
     try:
         inp = int(inp)
     except ValueError:
-        print("Please pass valid number")
+        print("Please enter a valid number")
     else:
         result: int = fib(inp)
         print(result)

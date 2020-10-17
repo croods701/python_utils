@@ -9,4 +9,11 @@ def armstrong(num: int) -> bool:
 
     return num == sum_inp
 
-print(armstrong(133))
+import sys
+if len(sys.argv) > 1:
+    try:
+        inp = int(sys.argv[1])
+    except ValueError:
+        print("please enetr valid number")
+    else:
+        print(armstrong(inp))    

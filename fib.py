@@ -3,4 +3,5 @@ def fib(num: int) -> int:
 
 import sys
 if len(sys.argv) > 1:
-    print(fib(int(sys.argv[1])))
+    result: int = fib(int(sys.argv[1]))
+    print(result)
